@@ -12,83 +12,98 @@ This project is a simple TODO application built using the MERN stack, which incl
 
 ## Installation
 1. Clone the repository
+
 git clone https://github.com/minaldeshmukh78/ReactNodeExpress.git
+
 cd ReactNodeExpress
 
-Backend Setup
-Step 1: Install backend dependencies
-cd backend
-npm install
+2. Configure MongoDB
 
-Configure MongoDB
-Start the backend server
-node server.js
+3. Backend Setup
 
-Frontend Setup
-Step 1: Install frontend dependencies
-cd frontend
-npm install
+    Install backend dependencies
 
-Start the frontend
-npm start
+        cd backend
+
+        npm install
+
+    Start the backend server
+
+        node server.js
+
+4. Frontend Setup
+    Install frontend dependencies
+
+        cd frontend
+
+        npm install
+
+    Start the frontend
+
+        npm start
 
 
 ## API Documentation
-POST /api/todos
-Create a new TODO item.
+1. POST /api/todos
 
-Request body:
+    Create a new TODO item.
 
-{
-  "title": "Task Title",
-  "description": "Task Description"
-}
+    Request body:
 
-Response:
+    {
+    "title": "Task Title",
+    "description": "Task Description"
+    }
 
-{
-  "id": "12345",
-  "title": "Task Title",
-  "description": "Task Description",
-  "isCompleted": false,
-  "createdAt": "2024-01-01T00:00:00.000Z"
-}
+    Response:
 
-GET /api/todos
-Retrieve all TODO items.
-
-Response:
-[
-  {
+    {
     "id": "12345",
     "title": "Task Title",
     "description": "Task Description",
     "isCompleted": false,
     "createdAt": "2024-01-01T00:00:00.000Z"
-  }
-]
-PUT /api/todos/:id
-Update a TODO item (mark as completed, edit title/description).
+    }
 
-Request body:
-{
-  "title": "Updated Title",
-  "description": "Updated Description",
-  "isCompleted": true
-}
-Response:
-{
-  "id": "12345",
-  "title": "Updated Title",
-  "description": "Updated Description",
-  "isCompleted": true,
-  "createdAt": "2024-01-01T00:00:00.000Z"
-}
+2. GET /api/todos
 
-DELETE /api/todos/:id
-Delete a TODO item.
+    Retrieve all TODO items.
 
-Response:
-{
-  "message": "Todo deleted successfully."
-}
+    Response:
+    [
+    {
+        "id": "12345",
+        "title": "Task Title",
+        "description": "Task Description",
+        "isCompleted": false,
+        "createdAt": "2024-01-01T00:00:00.000Z"
+    }
+    ]
+
+3. PUT /api/todos/:id
+    
+    Update a TODO item (mark as completed, edit title/description).
+
+    Request body:
+    {
+    "title": "Updated Title",
+    "description": "Updated Description",
+    "isCompleted": true
+    }
+    Response:
+    {
+    "id": "12345",
+    "title": "Updated Title",
+    "description": "Updated Description",
+    "isCompleted": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+    }
+
+4. DELETE /api/todos/:id
+
+    Delete a TODO item.
+
+    Response:
+    {
+    "message": "Todo deleted successfully."
+    }
