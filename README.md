@@ -13,9 +13,9 @@ This project is a simple TODO application built using the MERN stack, which incl
 ## Installation
 1. Clone the repository
 
-git clone https://github.com/minaldeshmukh78/ReactNodeExpress.git
+    git clone https://github.com/minaldeshmukh78/ReactNodeExpress.git
 
-cd ReactNodeExpress
+    cd ReactNodeExpress
 
 2. Configure MongoDB
 
@@ -32,6 +32,7 @@ cd ReactNodeExpress
         node server.js
 
 4. Frontend Setup
+
     Install frontend dependencies
 
         cd frontend
